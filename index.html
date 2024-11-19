@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body id="body" class="font-josefin-sans md:overflow-y-visible">
+  <header class="header">
+    <div class="header__contenido contenedor pt-16 pb-48 md:pb-28">
+      <div class="header__barra-navegacion flex items-center justify-between">
+        <img src="src/images/logo.svg" alt="logo Loopstudios" class="z-50">
+  
+        <a class="cursor-pointer block md:hidden z-50" id="menu">
+          <img src="src/images/icon-hamburger.svg" alt="icono menú" class="header__imagen-menu">
+        </a>
+
+        <nav class="navegacion hidden md:flex gap-7 text-white">
+          <a href="#" class="relative">About</a>
+          <a href="#" class="relative">Careers</a>
+          <a href="#" class="relative">Events</a>
+          <a href="#" class="relative">Products</a>
+          <a href="#" class="relative">Support</a>
+        </nav>
+  
+        <nav class="menu-fullscreen md:hidden" id="fullscreenMenu">
+          <a href="#" class="uppercase">About</a>
+          <a href="#" class="uppercase">Careers</a>
+          <a href="#" class="uppercase">Events</a>
+          <a href="#" class="uppercase">Products</a>
+          <a href="#" class="uppercase">Support</a>
+        </nav>
+      </div>
+
+      <h1 class="header__heading font-alata mt-40 p-6 md:p-8 text-white uppercase text-4xl md:text-5xl border-2 border-white lg:w-2/4 font-extralight tracking-widest break-words">Immersive experiences that deliver</h1>
+    </div>
+  </header>
+
+  <section class="interactive mt-20 md:mt-40">
+    <div class="contenedor">
+      <div class="interactive__contenido">
+        <div class="interactive__info bg-white p-[50px]">
+          <h2 class="text-center md:text-left text-very-dark-blue mb-4 text-4xl uppercase">The leader in interactive VR</h2>
+  
+          <p class="text-center md:text-left text-dark-blue">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality 
+            projects for some of the best companies around the globe. Our award-winning 
+            creations have transformed businesses through digital experiences that bind 
+            to their brand.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="creations mt-7 md:mt-40 mb-20 md:mb-40">
+    <div class="contenedor flex flex-col max-[768px]:items-center md:relative">
+      <h2 class="text-very-dark-blue mb-10 text-4xl uppercase">Our creations</h2>
+
+      <div class="creations__cuadros grid gap-4 md:grid-cols-4 md:gap-6 grow mb-5">
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source
+              media="(min-width: 768px)" 
+              srcset="src/images/desktop/image-deep-earth.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-deep-earth.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-6 tracking-widest font-light">
+            Deep earth
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-night-arcade.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-night-arcade.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-6 tracking-widest font-light">
+            Night arcade
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-soccer-team.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-soccer-team.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-32 tracking-widest font-light">
+            Soccer team VR
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-grid.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-grid.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-6 tracking-widest font-light">
+            The grid
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-from-above.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-from-above.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-32 tracking-widest font-light">
+            From up above VR
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-pocket-borealis.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-pocket-borealis.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-6 tracking-widest font-light">
+            Pocket borealis
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-curiosity.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-curiosity.jpg" lazyalt="imagen" class="w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-6 tracking-widest font-light">
+            The curiosity
+          </p>
+        </div>
+
+        <div class="creations__cuadro relative md:flex md:flex-col md:items-center">
+          <picture class="w-full">
+            <source 
+              media="(min-width: 768px)"
+              srcset="src/images/desktop/image-fisheye.jpg" 
+              type="image/jpeg">
+            <img loading="lazy" decoding="async" src="src/images/mobile/image-fisheye.jpg" lazyalt="imagen" class="creations__imagen w-full">
+          </picture>
+          <p class="absolute bottom-0 md:left-3 text-white ml-3 mb-3 uppercase text-2xl w-32 tracking-widest font-light">
+            Make it fisheye
+          </p>
+        </div>
+      </div>
+      <a href="#" class="uppercase py-1 px-7 border-2 border-black tracking-widest md:absolute md:top-0 md:right-0 hover:bg-black hover:text-white transition-colors duration-200">See all</a>
+    </div>
+  </main>
+
+  <footer class="footer bg-black py-10">
+    <div class="contenedor md:relative">
+      <img src="src/images/logo.svg" alt="logo Loopstudios" class="mx-auto md:mx-0">
+
+      <nav class="navegacion text-white flex flex-col items-center gap-5 my-10 md:flex-row md:my-0 md:mt-5">
+        <a href="#" class="relative">About</a>
+        <a href="#" class="relative">Careers</a>
+        <a href="#" class="relative">Events</a>
+        <a href="#" class="relative">Products</a>
+        <a href="#" class="relative">Support</a>
+      </nav>
+
+      <nav class="navegacion__social flex justify-center items-center gap-5 md:absolute md:top-0 md:right-0">
+        <a class="relative" href="https://facebook.com">
+          <img src="src/images/icon-facebook.svg" alt="icono-facebook">
+        </a>
+        <a class="relative" href="https://twitter.com">
+          <img src="src/images/icon-twitter.svg" alt="icono-twitter">
+        </a>
+        <a class="relative" href="https://pinterest.com">
+          <img src="src/images/icon-pinterest.svg" alt="icono-pinterest">
+        </a>
+        <a class="relative" href="https://instagram.com">
+          <img src="src/images/icon-instagram.svg" alt="icono-instagram">
+        </a>
+      </nav>
+
+      <p class="text-dark-blue text-center mt-5 md:text-right md:mt-[-25px]">
+        © 2021 Loopstudios. All rights reserved.
+      </p>
+
+      <div class="attribution text-dark-blue text-center md:mt-7">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-white">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/jorgecb10" class="text-white">Jorge Carranza</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
